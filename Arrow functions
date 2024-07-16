@@ -1,8 +1,8 @@
-**Arrow functions**
+Arrow functions
 
 Arrow functions in JavaScript are a more concise way to write functions compared to traditional function expressions. They were introduced in ES6 (ECMAScript 2015) and have a shorter syntax. Here are the key points to understand arrow functions:
 
-**Basic Syntax**
+Basic Syntax
 
 An arrow function is defined using the => syntax. Here is a simple example:
 
@@ -10,89 +10,102 @@ An arrow function is defined using the => syntax. Here is a simple example:
 
 const add = function(a, b) {
 
-return a + b;
+  return a + b;
 
 };
+
+
 
 // Arrow function
 
 const add = (a, b) => {
 
-return a + b;
+  return a + b;
 
 };
 
-**Even Shorter Syntax**
+Even Shorter Syntax
 
 If the function has only one expression, you can omit the curly braces {} and the return keyword. The expression is implicitly returned.
 
 const add = (a, b) => a + b;
 
-**Single Parameter**
+Single Parameter
 
 If the function has a single parameter, you can omit the parentheses () around the parameter.
 
 // With parentheses
 
-const square = (x) => x \* x;
+const square = (x) => x * x;
+
+
 
 // Without parentheses
 
-const square = x => x \* x;
+const square = x => x * x;
 
-**No Parameters**
+No Parameters
 
 If the function has no parameters, you need to include empty parentheses ().
 
 const greet = () => 'Hello!';
 
-**No Own this**
+No Own this
 
 Arrow functions do not have their own this context. Instead, they inherit this from the surrounding (lexical) scope. This is different from traditional functions.
 
 function Person() {
 
-this.age = 0;
+  this.age = 0;
 
-setInterval(() => {
 
-this.age++; // \`this\` refers to the Person instance
 
-}, 1000);
+  setInterval(() => {
+
+    this.age++; // `this` refers to the Person instance
+
+  }, 1000);
 
 }
+
+
 
 const person = new Person();
 
 In the example above, this.age++ correctly increments the age property of the person object because the arrow function does not have its own this context.
 
-**When Not to Use Arrow Functions**
+When Not to Use Arrow Functions
 
-- **Methods in Objects**: Arrow functions should not be used as methods in objects because they do not have their own this.
+Methods in Objects: Arrow functions should not be used as methods in objects because they do not have their own this.
 
 const person = {
 
-name: 'Alice',
+  name: 'Alice',
 
-greet: () => {
+  greet: () => {
 
-console.log(\`Hello, my name is ${this.name}\`); // \`this\` is undefined here
+    console.log(`Hello, my name is ${this.name}`); // `this` is undefined here
 
-}
+  }
 
 };
 
+
+
 person.greet(); // Output: Hello, my name is undefined
 
-- **Constructor Functions**: Arrow functions cannot be used as constructors and will throw an error when used with new.
+Constructor Functions: Arrow functions cannot be used as constructors and will throw an error when used with new.
 
 const MyClass = () => {};
 
 const instance = new MyClass(); // TypeError: MyClass is not a constructor
 
-**Summary**
+Summary
 
-- Arrow functions provide a shorter syntax for writing functions.
-- They do not have their own this, arguments, super, or new.target bindings.
-- Best used for short functions and callbacks.
-- Not suitable for methods in objects or constructor functions.
+Arrow functions provide a shorter syntax for writing functions.
+
+They do not have their own this, arguments, super, or new.target bindings.
+
+Best used for short functions and callbacks.
+
+Not suitable for methods in objects or constructor functions.
