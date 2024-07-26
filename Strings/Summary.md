@@ -1,18 +1,18 @@
-Detailed Theory of JavaScript Strings
+### Detailed Theory of JavaScript Strings
 
-Definition:
+**Definition**:
 - Strings in JavaScript are sequences of characters enclosed within single quotes (`'`) or double quotes (`"`).
 - They can contain letters, numbers, symbols, and whitespace.
 
-String Length:
+**String Length**:
 - The `length` property of a string returns the number of characters in the string.
 - This property is read-only and provides a way to determine the size of the string.
 
-Accessing Characters:
+**Accessing Characters**:
 - Characters in a string can be accessed using bracket notation (e.g., `string[index]`).
 - The index is zero-based, meaning the first character is at index 0.
 
-String Methods:
+**String Methods**:
 - Concatenation:
   - Combine two or more strings using the `+` operator or the `concat()` method.
 
@@ -37,12 +37,12 @@ String Methods:
   - Split a string into an array of substrings using `split(separator)`.
   - The separator can be a string or a regular expression.
 
-Template Literals:
+**Template Literals**:
 - Introduced in ES6, template literals use backticks (``) instead of single or double quotes.
 - Allow for embedding expressions inside a string using `${expression}`.
 - Support multi-line strings without needing escape characters for new lines.
 
-Escaping Characters:
+**Escaping Characters**:
 - Certain characters within a string need to be escaped using a backslash (`\`) to avoid syntax errors.
 - Examples include escaping quotes, newlines (`\n`), and tabs (`\t`).
 
