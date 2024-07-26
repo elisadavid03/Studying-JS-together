@@ -1,0 +1,7 @@
+JavaScript provides various methods to manipulate strings, such as:
+1. Concatenation; 
+2. Substring;
+3. UpperCase / LowerCase;
+4. Finding Index,
+5. Replacing,
+6. Splitting,
