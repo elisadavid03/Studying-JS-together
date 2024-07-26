@@ -1,4 +1,4 @@
-Individual characters in a string can be accessed using bracket notation ([]), starting with index 0.
+**Individual characters in a string can be accessed using bracket notation ([]), starting with index 0.**
 
 Example:
 
