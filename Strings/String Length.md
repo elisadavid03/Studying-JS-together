@@ -1,4 +1,4 @@
-The length of a string can be obtained using the length property.
+**The length of a string can be obtained using the length property.**
 
 Example:
 
