@@ -1,0 +1,5 @@
+Booleans are typically created as literals:
+
+let isTrue = true;
+
+let isFalse = false;
