@@ -1,9 +1,0 @@
-Introduced in ES6, template literals allow embedding expressions and multi-line strings using backticks (``).
-
-Example:
-
-let name = 'Alice';
-
-let greeting = `Hello, ${name}!`;
-
-console.log(greeting);  // Output: 'Hello, Alice!'
