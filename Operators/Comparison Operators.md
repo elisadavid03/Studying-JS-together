@@ -1,4 +1,4 @@
-Comparison operators compare two values and return a boolean result (true or false).
+**Comparison operators** compare two values and return a boolean result (true or false).
 
 - **Equal to (==)**: Returns true if operands are equal.
 
