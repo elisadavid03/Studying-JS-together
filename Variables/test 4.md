@@ -1,14 +1,14 @@
-True or False?
+**True or False?**
 
-- Variables declared with let reveal their value only once.
+Variables declared with **let** reveal their value only once.
 
 True
 
 False
 
-- Correctness: False.
+Correctness: **False**.
 
-- Variables declared with let do not reveal their value only once. Once a variable is declared with let, its value can be accessed and updated multiple times throughout the execution of the program, as long as you are within the scope where the variable is defined.
+- Variables declared with **let** do not reveal their value only once. Once a variable is declared with let, its value can be accessed and updated multiple times throughout the execution of the program, as long as you are within the scope where the variable is defined.
 
 Here's an example to illustrate this:
 
