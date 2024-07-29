@@ -4,13 +4,13 @@
 
 Variables declared with let are block-scoped. This means they are limited to the block (delimited by {}) in which they are defined. This includes blocks such as if, for, while, and also function blocks.
 
-if (true) {
+`if (true) {`
 
     let message = 'Hello!';
 
     console.log(message);  // Output: Hello!
 
-}
+`}`
 
 console.log(message);  // Error: message is not defined
 
@@ -26,11 +26,11 @@ Attempting to access message outside the block results in an error because it's 
 
 Variables declared with let can have their values reassigned.
 
-let score = 80;
+`let score = 80;`
 
-score = 90;  // Updating the value of score
+`score = 90;  // Updating the value of score`
 
-console.log(score);  // Output: 90
+`console.log(score);  // Output: 90`
 
 Here, score is initially assigned the value 80. Later, its value is updated to 90 without any issues.
 
@@ -38,9 +38,9 @@ Here, score is initially assigned the value 80. Later, its value is updated to 9
 
 Unlike variables declared with var, you cannot redeclare a variable with let in the same scope.
 
-let num = 1;
+`let num = 1;`
 
-let num = 2;  // Error: Identifier 'num' has already been declared
+`let num = 2;  // Error: Identifier 'num' has already been declared`
 
 This helps avoid accidental variable redeclaration and potential bugs in your code.
 
@@ -48,9 +48,9 @@ This helps avoid accidental variable redeclaration and potential bugs in your co
 
 Variables declared with let have a temporal dead zone (TDZ) before their declaration point in the code. This means you cannot access them before their declaration, unlike variables declared with var.
 
-console.log(age);  // ReferenceError: Cannot access 'age' before initialization
+`console.log(age);  // ReferenceError: Cannot access 'age' before initialization`
 
-let age = 30;
+`let age = 30;`
 
 In this example, trying to access age before its declaration results in a ReferenceError. This ensures variables are used only after they have been properly initialized.
 
@@ -58,7 +58,7 @@ In this example, trying to access age before its declaration results in a Refere
 
 Loops: let is often used in for loops to avoid unintended behavior caused by var.
 
-for (let i = 0; i < 5; i++) {
+`for (let i = 0; i < 5; i++) {`
 
     setTimeout(function() {
 
@@ -66,7 +66,7 @@ for (let i = 0; i < 5; i++) {
 
     }, 100);
 
-}
+`}`
 
 Using let in the for loop ensures that each iteration creates a new variable i, preserving its value for each iteration of setTimeout.
 
