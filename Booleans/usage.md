@@ -3,6 +3,7 @@ Booleans are fundamental in controlling the flow of execution in JavaScript prog
 Here, we declare the variable num and assign it the value 5. We also declare the variable bool which we assign the boolean representation of num.
 Extend the code such that the console.log() statement logs false.
 
+```javascript
 let num = 5; 
 
 num = 0;
