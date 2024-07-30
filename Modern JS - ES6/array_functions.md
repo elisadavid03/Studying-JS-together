@@ -51,13 +51,13 @@ Arrow functions do not have their own this context. Instead, they inherit this f
 ```javascript
 function Person() {
 
-`  `this.age = 0;
+this.age = 0;
 
-`  `setInterval(() => {
+setInterval(() => {
 
-`    `this.age++; // `this` refers to the Person instance
+this.age++; // `this` refers to the Person instance
 
-`  `}, 1000);
+}, 1000);
 
 }
 
@@ -71,13 +71,13 @@ In the example above, this.age++ correctly increments the age property of the pe
 ```javascript
 const person = {
 
-`  `name: 'Alice',
+name: 'Alice',
 
-`  `greet: () => {
+greet: () => {
 
-`    `console.log(`Hello, my name is ${this.name}`); // `this` is undefined here
+console.log(`Hello, my name is ${this.name}`); // `this` is undefined here
 
-`  `}
+}
 
 };
 
@@ -92,6 +92,6 @@ const instance = new MyClass(); // TypeError: MyClass is not a constructor
 ### Summary
 
 - Arrow functions provide a shorter syntax for writing functions.
-- They do not have their own this, arguments, super, or new.target bindings.
+- They do not have their own `this`, `arguments`, `super`, or `new.target` bindings.
 - Best used for short functions and callbacks.
 - Not suitable for methods in objects or constructor functions.
