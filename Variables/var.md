@@ -3,7 +3,7 @@
 1. **Function Scope**:
 
 Variables declared with var are function-scoped. This means they are accessible throughout the function in which they are defined, regardless of where the var statement occurs within the function.
-
+```javascript
 function sayHello() {
 
     var message = 'Hello!';
@@ -13,7 +13,7 @@ function sayHello() {
 }
 
 console.log(message);  // Error: message is not defined
-
+```
 **In this example**:
 
 message is declared with var inside the sayHello function.
@@ -25,7 +25,7 @@ Attempting to access message outside the function results in an error (Reference
 2. **Hoisting**:
 
 Variables declared with var are hoisted to the top of their scope during the compilation phase of JavaScript execution. This means that regardless of where variables are declared within a function or global scope, their declarations are moved to the top of their containing function or global scope.
-
+```javascript
 console.log(name);  // Output: undefined
 
 var name = 'Alice';
@@ -37,23 +37,23 @@ var name;
 console.log(name);  // Output: undefined
 
 name = 'Alice';
-
+```
 3. **Redeclaration**:
 
 Variables declared with var can be redeclared within the same scope without causing an error.
-
+```javascript
 var num = 1;
 
 var num = 2;
 
 console.log(num);  // Output: 2
-
+```
 Although redeclaration is allowed, it can lead to potential bugs and is generally considered poor practice. Redeclaring variables can overwrite existing values unintentionally.
 
 4. **Global Scope**:
 
 If var is used outside of any function, the variable is declared in the global scope, making it accessible globally.
-
+```javascript
 var globalVar = 'I am global';
 
 function test() {
@@ -65,11 +65,11 @@ function test() {
 test();
 
 console.log(globalVar);  // Output: I am global
-
+```
 5. **No Block Scope**:
 
 Variables declared with var do not have block scope. This can lead to unexpected behavior when used inside blocks like if statements or loops.
-
+```javascript
 if (true) {
 
     var localVar = 'Inside block';
@@ -79,7 +79,7 @@ if (true) {
 }
 
 console.log(localVar);  // Output: Inside block
-
+```
 In this example, localVar is accessible both inside and outside the if block, which can lead to unintended consequences or variable pollution.
 
 **Summary**:
