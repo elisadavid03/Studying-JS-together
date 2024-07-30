@@ -1,4 +1,3 @@
-
 ## Arrow Functions
 
 Arrow functions in JavaScript offer a more concise way to write functions compared to traditional function expressions. Introduced in ES6 (ECMAScript 2015), they feature a shorter syntax. Here are the key points to understand arrow functions:
